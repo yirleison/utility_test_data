@@ -1,7 +1,13 @@
-const connect = (value1, value2) => {
-    console.log(value1);
-    console.log(value12);
+const connect = (func1, func2) => {
+    const dato1 = func1();
+    console.log(dato1);
+    console.log(func1);
+    console.log(func2);
     return (component) => {
-        const result = `${value1} ${value2}`;
+        const result = `${component}-${func1()*func2()}`;
+        console.log(result);
+        return result;
     }
 }
+
+connect(()=>2,()=>3)('App');
