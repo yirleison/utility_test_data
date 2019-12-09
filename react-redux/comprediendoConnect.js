@@ -1,3 +1,9 @@
+/**
+ * Este tipo de funcion se denomina funcion de orden superior, es una funcion la cual retorna otra función
+ * y la función retornada puede o no recibir parámetros.
+ * @param {*} func1 
+ * @param {*} func2 
+ */
 const connect = (func1, func2) => {
     const dato1 = func1();
     console.log(dato1);
@@ -10,4 +16,7 @@ const connect = (func1, func2) => {
     }
 }
 
-connect(()=>2,()=>3)('App');
+const mapStateToProps = () => 2;
+const mapDispatchToProps = () => 3;
+
+connect(mapStateToProps,mapDispatchToProps)('App');
