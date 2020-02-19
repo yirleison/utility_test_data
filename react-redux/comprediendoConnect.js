@@ -1,5 +1,5 @@
 /**
- * Este tipo de funcion se denomina funcion de orden superior, es una funcion la cual retorna otra función
+ * Este tipo de función se denomina función de orden superior, es una función la cual retorna otra función
  * y la función retornada puede o no recibir parámetros.
  * @param {*} value1 
  * @param {*} values2 
